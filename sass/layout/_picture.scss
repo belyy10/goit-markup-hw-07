@@ -1,0 +1,43 @@
+.picture {
+    padding-top: 0;
+}
+
+.picture-title,
+.team-title {
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-title-color);
+    margin-bottom: 50px;
+}
+
+.picture-list {
+    display: flex;
+}
+
+.picture-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.picture-description {
+    position: relative;
+}
+
+.picture-text {
+    bottom: 0;
+    position: absolute;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.8);
+    color: var(--primary-white-color);
+    padding-top: 27px;
+    padding-bottom: 27px;
+    width: 100%;
+
+
+}

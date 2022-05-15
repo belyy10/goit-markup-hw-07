@@ -1,0 +1,120 @@
+.header {
+    border: 1px solid #ECECEC;
+}
+
+.header__logo {
+    margin-right: 93px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.menu-list__item,
+.menu-list {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+
+
+.menu-list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    transition: color var(--transition-duration) var(--transition-timing-function);
+    & :hover,
+    &:focus {
+            color: var(--accent-color)
+        }
+}
+
+.menu-list__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.menu-list__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color var(--transition-duration) var(--transition-timing-function);
+}
+
+.menu-list__link.current {
+    position: relative;
+&::after {
+        content: "";
+        width: 100%;
+        height: 4px;
+        background-color: var(--accent-color);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-radius: 2px;
+    }
+
+}
+
+
+
+.header__connect {
+    margin-left: auto;
+}
+
+
+
+.connect-list {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    transition: color var(--transition-duration) var(--transition-timing-function);
+    & :hover,
+        & :focus {
+            color: var(--accent-color)
+        }
+}
+
+.connect-list__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.connect-list__mail,
+.connect-list__tel {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--primary-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #ffffff;
+    transition: fill var(--transition-duration) var(--transition-timing-function);
+}
+
+
+
+.connect-list__icon {
+    fill: var(--primary-text-color);
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    transition: fill var(--transition-duration) var(--transition-timing-function);
+    .connect-list__mail:hover & {
+            fill: var(--accent-color)
+        }
+    
+        .connect-list__tel:hover & {
+            fill: var(--accent-color)
+        }
+}
