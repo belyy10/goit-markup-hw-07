@@ -59,6 +59,10 @@
         .footer-item:focus {
             background-color: var(--accent-color);
         }
+    &:focus,
+        .footer-item:focus {
+            background-color: var(--accent-color);
+        }
 }
 
 

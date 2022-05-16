@@ -8,6 +8,19 @@
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 p,
 h1,
 h2,
@@ -58,17 +71,13 @@ a {
   margin: 0 auto;
 }
 
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
+.title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-title-color);
+  margin-bottom: 50px;
 }
 
 .logo {
@@ -129,7 +138,6 @@ a {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
 .modal-close-btn:hover, .modal-close-btn:focus {
@@ -330,7 +338,8 @@ a {
   transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
-.menu-list :hover, .menu-list:focus {
+.menu-list :hover,
+.menu-list :focus {
   color: var(--accent-color);
 }
 
@@ -402,11 +411,11 @@ a {
   transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
-.connect-list__mail:hover .connect-list__icon {
+.connect-list__mail:hover .connect-list__icon, .connect-list__mail:focus .connect-list__icon {
   fill: var(--accent-color);
 }
 
-.connect-list__tel:hover .connect-list__icon {
+.connect-list__tel:hover .connect-list__icon, .connect-list__tel:focus .connect-list__icon {
   fill: var(--accent-color);
 }
 
@@ -476,10 +485,6 @@ a {
 }
 
 .about-item__title {
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--secondary-title-color);
   margin-bottom: 10px;
 }
 
@@ -492,16 +497,6 @@ a {
 
 .picture {
   padding-top: 0;
-}
-
-.picture-title,
-.team-title {
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--secondary-title-color);
-  margin-bottom: 50px;
 }
 
 .picture-list {
@@ -596,7 +591,7 @@ a {
   transition: background-color var(--transition-duration) var(--transition-timing-function);
 }
 
-.team-icons-link:hover {
+.team-icons-link:hover, .team-icons-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -605,17 +600,8 @@ a {
   transition: fill var(--secondary-title-color) var(--transition-timing-function);
 }
 
-.team-icons-link:hover .team-icons {
+.team-icons-link:hover .team-icons, .team-icons-link:focus .team-icons {
   fill: var(--primary-white-color);
-}
-
-.clients-title {
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--secondary-title-color);
-  margin-bottom: 50px;
 }
 
 .clients-list {
@@ -700,6 +686,11 @@ a {
 }
 
 .footer-icons-link:hover,
+.footer-icons-link .footer-item:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-icons-link:focus,
 .footer-icons-link .footer-item:focus {
   background-color: var(--accent-color);
 }
@@ -861,7 +852,7 @@ a {
   transition: box-shadow var(--transition-duration) var(--transition-timing-function);
 }
 
-.portfolio-item:hover {
+.portfolio-item:hover, .portfolio-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 

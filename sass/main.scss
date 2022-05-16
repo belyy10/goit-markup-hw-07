@@ -1,9 +1,10 @@
 
 @import "./ulits/vars";
+@import "./ulits/hidden";
 @import "./base/reset";
 @import "./base/common";
 @import "./components/container";
-@import "./ulits/hidden";
+@import "./components/title";
 @import "./components/logo";
 @import "./components/section";
 @import "./components/current";
@@ -15,5 +16,5 @@
 @import "./layout/team";
 @import "./layout/clients";
 @import "./layout/footer";
-@import "./layout-2/menu";
-@import "./layout-2/portfolio";
+@import "./layout/menu";
+@import "./layout/portfolio";

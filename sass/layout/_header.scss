@@ -34,7 +34,7 @@
     justify-content: center;
     transition: color var(--transition-duration) var(--transition-timing-function);
     & :hover,
-    &:focus {
+    & :focus {
             color: var(--accent-color)
         }
 }
@@ -110,11 +110,11 @@
     align-items: center;
     justify-content: center;
     transition: fill var(--transition-duration) var(--transition-timing-function);
-    .connect-list__mail:hover & {
+    .connect-list__mail:hover & , .connect-list__mail:focus & {
             fill: var(--accent-color)
         }
     
-        .connect-list__tel:hover & {
+        .connect-list__tel:hover &, .connect-list__tel:focus & {
             fill: var(--accent-color)
         }
 }
